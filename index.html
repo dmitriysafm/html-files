@@ -1,143 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Спокойной ночи, Алина 🌙</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>дерзкая девушка Алина</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff1b8);
+            overflow: hidden;
+        }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-      color: white;
-      background:
-        radial-gradient(circle at 20% 20%, #263b72 0, transparent 25%),
-        radial-gradient(circle at 80% 30%, #41245f 0, transparent 25%),
-        linear-gradient(135deg, #070b22, #111536 55%, #211333);
-    }
+        .card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 45px 35px;
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            max-width: 500px;
+            margin: 20px;
+            animation: appear 1.5s ease;
+        }
 
-    .stars {
-      position: fixed;
-      inset: 0;
-      background-image:
-        radial-gradient(2px 2px at 10% 20%, white, transparent),
-        radial-gradient(1px 1px at 25% 70%, white, transparent),
-        radial-gradient(2px 2px at 40% 35%, white, transparent),
-        radial-gradient(1px 1px at 55% 15%, white, transparent),
-        radial-gradient(2px 2px at 70% 65%, white, transparent),
-        radial-gradient(1px 1px at 85% 25%, white, transparent),
-        radial-gradient(2px 2px at 92% 80%, white, transparent),
-        radial-gradient(1px 1px at 65% 90%, white, transparent);
-      animation: twinkle 4s ease-in-out infinite alternate;
-    }
+        h1 {
+            color: #ff5c8a;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
 
-    .moon {
-      position: fixed;
-      top: 9%;
-      right: 12%;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: #fff8d6;
-      box-shadow: 0 0 40px rgba(255, 248, 214, .45);
-    }
+        p {
+            color: #555;
+            font-size: 20px;
+            line-height: 1.6;
+        }
 
-    .card {
-      position: relative;
-      z-index: 2;
-      width: min(90%, 600px);
-      padding: 55px 35px;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 30px;
-      background: rgba(255,255,255,.08);
-      backdrop-filter: blur(14px);
-      box-shadow: 0 25px 80px rgba(0,0,0,.35);
-      animation: appear 1.2s ease;
-    }
+        .heart {
+            font-size: 55px;
+            animation: heartbeat 1.5s infinite;
+        }
 
-    .emoji {
-      font-size: 55px;
-      margin-bottom: 15px;
-      animation: float 3s ease-in-out infinite;
-    }
+        .sun {
+            font-size: 60px;
+        }
 
-    h1 {
-      margin: 0 0 20px;
-      font-size: clamp(38px, 8vw, 64px);
-      font-weight: 700;
-      background: linear-gradient(90deg, #fff, #ffdff5, #d9dcff);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    p {
-      margin: 0 auto;
-      max-width: 480px;
-      font-size: 20px;
-      line-height: 1.6;
-      color: #e8e9ff;
-    }
-
-    .heart {
-      margin-top: 28px;
-      font-size: 28px;
-      animation: heartbeat 1.8s infinite;
-    }
-
-    @keyframes appear {
-      from {
-        opacity: 0;
-        transform: translateY(30px) scale(.95);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      15% { transform: scale(1.2); }
-      30% { transform: scale(1); }
-    }
-
-    @keyframes twinkle {
-      from { opacity: .55; }
-      to { opacity: 1; }
-    }
-  </style>
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="stars"></div>
-  <div class="moon"></div>
 
-  <main class="card">
-    <div class="emoji">🌙✨</div>
+    <div class="card">
+        <div class="sun">🌸</div>
 
-    <h1>Доброе утро и хорошего тебе дня!</h1>
+        <h1>Доброе утро! ☀️</h1>
 
-    <p>
-      Я не успел сделать с пожеланием сладких снов.
-      Надеюсь ты просто не забоялась открыть ссылку, ахах  💫
-    </p>
+        <p>
+            p.s я полюбому буду еще спать,
+            но надеюсь ты просто не забоялась и открыла ссылку.
+            ✨
+        </p>
 
-    <div class="heart">💫</div>
-  </main>
+        <p>
+            Желаю тебе хорошего дня! 
+            и кстати, по вопросу секусальной конституции - она совпадает?))
+            а то ты ушла от ответа
+        </p>
+
+        <div class="heart">🌸</div>
+    </div>
+
 </body>
 </html>
