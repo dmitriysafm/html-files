@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>дерзкая девушка Алина</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff1b8);
+            overflow: hidden;
+        }
+
+        .card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 45px 35px;
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            max-width: 500px;
+            margin: 20px;
+            animation: appear 1.5s ease;
+        }
+
+        h1 {
+            color: #ff5c8a;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            font-size: 55px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .sun {
+            font-size: 60px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="sun">🌸</div>
+
+        <h1>Доброе утро! ☀️</h1>
+
+        <p>
+            p.s я полюбому буду еще спать,
+            но надеюсь ты просто не забоялась и открыла ссылку.
+            ✨
+        </p>
+
+        <p>
+            Желаю тебе хорошего дня! 
+            и кстати, по вопросу секусальной конституции - она совпадает?))
+            а то ты ушла от ответа
+        </p>
+
+        <div class="heart">🌸</div>
+    </div>
+
+</body>
+</html>
